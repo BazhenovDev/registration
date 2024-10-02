@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<main class="main">
+    <div class="container">
+        <header class="header">
+            <a href="#"><img src="images/logo.png" alt="HomeWorks logo" class="header__logo"></a>
+        </header>
+        <section class="registration">
+            <h1 class="title">
+                Get your free account
+            </h1>
+            <p class="description">
+                Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+            </p>
+            <form class="form" action="" method="get">
+                <label class="form__label remove">
+                    <p class="input-title">Full Name</p>
+                    <input type="text" name="name" class="form__input" id="full-name">
+                    <p class="validation-error">Full Name может содержать только буквы и пробел</p>
+                </label>
+                <label class="form__label">
+                    <p class="input-title">Your username</p>
+                    <input type="text" name="username" class="form__input" id="username">
+                    <p class="validation-error">Your username - может содержать только:
+                    <ul class="validation-error-point">
+                        <li><span>буквы</span></li>
+                        <li><span>цифры</span></li>
+                        <li><span>символ подчеркивания и тире</span></li>
+                    </ul>
+                    </p>
+                </label>
+                <label class="form__label remove">
+                    <p class="input-title">E-mail</p>
+                    <input type="text" name="email" class="form__input" id="email">
+                    <p class="validation-error">Введите ваш E-mail</p>
+                </label>
+                <label class="form__label">
+                    <p class="input-title">Password</p>
+                    <input type="password" name="password" class="form__input">
+                    <p class="validation-error">
+                        Поле пароля должно содержать минимум 8 символов, среди которых есть:
+                    <ul class="validation-error-point">
+                        <li><span>хотя бы одна буква в верхнем регистре</span></li>
+                        <li><span>хотя бы одна цифра</span></li>
+                        <li><span>хотя бы один спецсимвол</span></li>
+                    </ul>
+                    </p>
+                </label>
+                <label class="form__label mb30 remove">
+                    <p class="input-title">Repeat Password</p>
+                    <input type="password" name="repeat-password" class="form__input">
+                    <p class="validation-error">Repeat Password должны совпадать c Password</p>
+                </label>
+                <label class="checkbox form__label remove">
+                    <input type="checkbox" name="checkbox-privacy" class="privacy" id="checkbox" >
+                    <p class="checkbox-text">Agree to our Terms of Service and Privacy Statement</p>
+                    <p class="validation-error">Подтвердите, что согласны с политикой конфиденциальности</p>
+                </label>
+                <button class="btn form__btn" id="btn" type="button">Sign Up</button>
+            </form>
+            <div class="link-wrap">
+                <a href="#" class="registration__link">Already have an account?</a>
+            </div>
+        </section>
+        <section class="image">
+            <img src="images/rocket_img.png" alt="rocket-image">
+        </section>
+    </div>
+</main>
+<div class="modal disabled">
+    <div class="modal-window">
+        <p class="modal__text">На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</p>
+        <button class="btn modal__btn" type="submit">OK</button>
+    </div>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>

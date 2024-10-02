@@ -1,0 +1,206 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #FFFFFB;
+    background: linear-gradient(to right, transparent 50%, #F8F8FA 50%);
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 27px 0 112px;
+}
+
+.header__logo {
+    margin-left: -6px;
+}
+
+.registration {
+    padding-left: 63px;
+}
+
+.description{
+    font-size: 22px;
+    color: #636363;
+    line-height: 27px;
+    margin-bottom: 75px;
+}
+
+.title {
+    line-height: 49px;
+    font-size: 36px;
+    margin-bottom: 7px;
+    color: #000;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-title {
+    font-size: 16px;
+    line-height: 27px;
+    color: #C6C6C4;
+}
+
+.form__input {
+    font-size: 20px;
+    line-height: 27px;
+    color: #323232;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #C6C6C4;
+    outline: 0;
+    width: 100%;
+    font-family: "Nunito",sans-serif;
+    padding-bottom: 5px;
+}
+
+.form__label {
+    margin-bottom: 20px;
+    width: 452px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    margin-bottom: 40px;
+}
+
+.checkbox-text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    margin-left: 10px;
+}
+
+.privacy {
+    cursor: pointer;
+}
+
+.image {
+    margin: 60px 0 0 11px;
+}
+
+.btn {
+    background-color: #DD3142;
+    border: 0;
+    border-radius: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.form__btn {
+    padding: 21px 0 25px;
+    width: 210px;
+    margin: 0 auto 44px;
+    transform: translateX(-63px);
+}
+
+.modal__btn {
+    width: 120px;
+    padding: 20px;
+}
+
+.btn:hover {
+    background-color: #aa1a29;
+}
+
+.link-wrap {
+    text-align: center;
+    transform: translateX(-63px);
+    margin-bottom: 191px;
+}
+
+.registration__link {
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window {
+    padding: 30px;
+    width: 400px;
+    background: linear-gradient(to left top, #FFFFFB 50%, #F8F8FA 50%);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal__text {
+    margin-bottom: 30px;
+}
+
+.disabled {
+    display: none;
+}
+
+
+.validation-error {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #FF0000;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.green {
+    color: #008000;
+}
+
+ul {
+    color: black;
+}
+
+ul li {
+    color: #000000;
+    margin-left: 30px;
+}
+
+ul li span {
+    font-size: 12px;
+    color: #FF0000;
+}
+
+.form__label .validation-error {
+    grid-column: 1 / 3;
+}
